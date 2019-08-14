@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spam Forwarder</title>
+	<link rel="icon" href="http://www.textpower.com/public/wp-content/uploads/2014/08/no-spam-2x.gif">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgba(173,216,230, 0.3)
+">
+	<style type="text/css">
+		button:focus {outline:0;}
+		h2, h1{font-family: 'Open Sans', sans-serif;}
+		.font{font-family: 'Ubuntu', sans-serif; color: grey; opacity: 0.6;}
+	</style>
+	<script type="text/javascript">
+		function copyStringToClipboard (str) {
+   var el = document.createElement('textarea');
+   el.value = str;
+   el.setAttribute('readonly', '');
+   el.style = {position: 'absolute', left: '-9999px'};
+   document.body.appendChild(el);
+   el.select();
+   document.execCommand('copy');
+   document.body.removeChild(el);
+}
+	</script>
+		<center>
+		<h1>Personal Email Forwarding Frontend</h1>
+		<h3 class="font">Write --</h3>
+		<a href="mailto:thisis@4spam.pw"><button style="border-radius: 10px;"><h2>Compose an email to me on your device's default mail client</h2></button></a>
+		<br>
+		<h3 class="font">Copy --</h3>
+		<button style="border-radius: 10px;" onclick="copyStringToClipboard('thisis@4spam.pw')"><h2>Copy thisis@4spam.pw to clipboard</h2></button>
+		</center>
+</body>
+</html>
